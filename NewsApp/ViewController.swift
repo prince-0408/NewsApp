@@ -11,10 +11,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     private let tableView: UITableView = {
         let table = UITableView()
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
+        table.register(UITableViewCell.self,
+            forCellReuseIdentifier: "cell")
         return table
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "News"
@@ -48,11 +49,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             withIdentifier: "cell",
             for: indexPath
         )
-        cell.textLable?.text = "Something"
+        cell.textLabel?.text = "Something"
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRows(at: indexPath, animate: true)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)  {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
