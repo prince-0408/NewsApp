@@ -16,7 +16,7 @@ final class APICaller {
     
     private init() {}
 
-    public func getTopStories(completion: @escaping (Result<[String], Error>) -> Void){
+    public func getTopStories(completion: @escaping (Result<[Article], Error>) -> Void){
         guard let url = Constants.topHealinesURL else {
             return
         }
@@ -30,6 +30,7 @@ final class APICaller {
                     let result = try JSONDecoder().decode(APIResponse.self, from: data)
                     
                     print("Articles: \(result.articles.count)")
+                    completion(.success(result.articles))
                 }
                 catch {
                     completion(.failure(error))
@@ -47,7 +48,7 @@ struct APIResponse: Codable {
 struct Article: Codable {
     let source: Source
     let title: String
-    let desription: String?
+    let description: String?
     let url: String?
     let urlToImage: String?
     let publishedAt: String

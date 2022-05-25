@@ -14,6 +14,7 @@
 		1725B2C8283E075E00C1098B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1725B2C7283E075E00C1098B /* Assets.xcassets */; };
 		1725B2CB283E075E00C1098B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1725B2C9283E075E00C1098B /* LaunchScreen.storyboard */; };
 		1725B2D4283E18D700C1098B /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1725B2D3283E18D700C1098B /* APICaller.swift */; };
+		1725B2D7283E994900C1098B /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1725B2D6283E994900C1098B /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1725B2CA283E075E00C1098B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1725B2CC283E075E00C1098B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1725B2D3283E18D700C1098B /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		1725B2D6283E994900C1098B /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1725B2C9283E075E00C1098B /* LaunchScreen.storyboard */,
 				1725B2CC283E075E00C1098B /* Info.plist */,
 				1725B2D3283E18D700C1098B /* APICaller.swift */,
+				1725B2D6283E994900C1098B /* NewsTableViewCell.swift */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				1725B2C3283E075C00C1098B /* ViewController.swift in Sources */,
 				1725B2BF283E075C00C1098B /* AppDelegate.swift in Sources */,
+				1725B2D7283E994900C1098B /* NewsTableViewCell.swift in Sources */,
 				1725B2C1283E075C00C1098B /* SceneDelegate.swift in Sources */,
 				1725B2D4283E18D700C1098B /* APICaller.swift in Sources */,
 			);
